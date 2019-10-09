@@ -1,0 +1,154 @@
+.container {
+  text-align: center;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+/* BLOCCO LEZIONI */
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#lezioni {
+  text-align: center;
+}
+
+#lezioni .row {
+  margin: 0;
+}
+
+/* BLOCCO STEPS */
+#steps{
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row img {
+  background-color:#428bca;
+  border-radius:50%;
+  padding:30px
+}
+
+/* COMMON */
+
+#lezioni .row h1, #lezioni .row div,
+#steps .row h1,
+#why .row h1, #why .row div {
+  padding: 20px;
+}
+
+[background="grey"]{
+  background-color: #f9f9f9;
+}
+
+img {
+  padding: 12px;
+}
+
+#why img, #why h3 {
+  margin: 0 0 10px 0;
+}
+
+/* Bonus */
+.xxs-container {
+  display: none;
+}
+#text-change {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #000;
+  font-weight: bold;
+  line-height: 2em;
+  background: #c4c4c4;
+}
+
+/* Regole responsive */
+@media screen and (min-width: 992px) {
+
+  #text-change {
+    color: #fff;
+  }
+  #text-change span:after {
+    content: "Stai utilizzando lo stile superiore a 992px";
+    width: 100%;
+  }
+  img{
+    height: 200px;
+  }
+  #why hr {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  #text-change {
+    color: #bd2219;
+    font-size: 1.5em;
+  }
+  #text-change span:after {
+    content: "Stai utilizzando lo stile compreso tra 768px e 991px";
+    width: 100%;
+  }
+  img{
+    height: 140px;
+  }
+  #steps .row div {
+    padding: 20px;
+  }
+  #why hr {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  img {
+    height: 130px;
+  }
+  #steps img{
+    height: 100px;
+  }
+  #steps h3 {
+    font-size: 1rem;
+  }
+  #steps p {
+    display: none;
+  }
+  #why hr {
+    margin: 20px 0 0 0;
+  }
+  #text-change {
+    color: #1d9aab;
+    font-size: 1.2em;
+  }
+  #text-change span:after {
+    content: "Stai utilizzando lo stile inferiore a 768px";
+    width: 100%;
+  }
+}
+
+/* Bonus */
+@media screen and (max-width: 280px) {
+  .container {
+    display: none;
+  }
+  .xxs-container {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(180deg, red, yellow);
+    height: 100vh;
+  }
+}
